@@ -26,16 +26,18 @@ This web system is dedicated to check the weather cast for mostly all places of 
         
 
 ## API definition
-The main information that you can get from API is information about the weather
-    - GET http://api.openweathermap.org/data/2.5/weather?q=Dudinka,Russia&appid=4c495c89f5ba85bbdd690c7a55518274
-        Get data by the location of the place
-    - GET http://api.openweathermap.org/data/2.5/weather?lat=35&lon=1397&appid=4c495c89f5ba85bbdd690c7a55518274
-        Get data by the coordinates
 
-General errors:
+- The main information that you can get from API is information about the weather
+    - GET http://api.openweathermap.org/data/2.5/weather?q=Dudinka,Russia&appid=?
+        - Get data by the location of the place
+    - GET http://api.openweathermap.org/data/2.5/weather?lat=35&lon=1397&appid=?
+        - Get data by the coordinates
+
+- General errors:
     - 400 - when there is nothing to goecode
     - 401 - when using invalid API key
     - 404 - when values are not found
-
+.
 ## UI definition
-- https://wireframe.cc/aO1oyD
+
+https://wireframe.cc/aO1oyD
