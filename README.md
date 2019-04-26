@@ -7,7 +7,7 @@ This web system is dedicated to check the weather cast for mostly all places of 
 -  The main entity of the WEB system is weather forecast.
 -  Entity hasa these atributes:
     - coord:
-        - coord.lon - number (min: J-180, max: 180)
+        - coord.lon - number (min: -180, max: 180)
         - coord.lat - number (min: -90, max: 90)
     - dt - number (ISO 8601 date string, which defines when the information was published by the Author)
     - weather:
