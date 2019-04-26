@@ -6,21 +6,23 @@ This web system is dedicated to check the weather cast for mostly all places of 
 ## Entity definition
 -  The main entity of the WEB system is weather forecast.
 -  Entity hasa these atributes:
-    - coord - number (min: JS number type length, max: JS number type length)
+    - coord:
+        - coord.lon - number (min: J-180, max: 180)
+        - coord.lat - number (min: -90, max: 90)
     - dt - number (ISO 8601 date string, which defines when the information was published by the Author)
     - weather:
-        - id - number (min: 1, max: JS number type length)
-        - description - string (max:20)
+        - weather.id - number (min: 1, max: JS number type length)
+        - weather.description - string (max:20)
     - main:
-        - temp - number (min: 200, max: 400)
-        - humidity - number (min: 0, max: 100)
+        - main.temp - number (min: 200, max: 400)
+        - main.humidity - number (min: 0, max: 100)
     - wind:
-        - speed - number (min: 0, max: 300)
-        - deg - number (min: 0, max: 359)
+        - wind.speed - number (min: 0, max: 300)
+        - wind.deg - number (min: 0, max: 359)
     - sys:
-        - id - number (min: 1, max: JS number type length)
-        - country - string (length: 2 to, ISO 3166 type, e. g. "LT", "UK")
-        - name - string (max: 100) 
+        - sys.id - number (min: 1, max: JS number type length)
+        - sys.country - string (length: 2 to, ISO 3166 type, e. g. "LT", "UK")
+        - sys.name - string (max: 100) 
         
         
         
