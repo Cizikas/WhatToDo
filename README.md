@@ -36,8 +36,9 @@ This web system is dedicated to check the weather cast for mostly all places of 
         - Get data by the coordinates
     - GET http://api.openweathermap.org/data/2.5/weather?zip=19040&appid=?
         - Get data by the zipcode
-    - POST http://api.openweathermap.org/data/2.5/weather/q=Dudinka,Russia/state&appid?
+    - POST http://api.openweathermap.org/data/2.5/weather/q=Dudinka,Russia/state&appid=?
         - Give the feedback if the stated information is correct
+            - Error 403 - when person might not have the required permission
 
 - General errors:
     - 400 - when there is nothing to goecode
